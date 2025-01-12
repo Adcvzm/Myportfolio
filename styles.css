@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5EFFF;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #441752;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #F5EFFF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero span {
+    color: #007BFF;
+}
+
+.hero .name {
+    font-family: 'Pacifico', cursive; /* Apply Pacifico font */
+    color: #441752; /* Set color for name text */
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #EFB6C8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.profile-img:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.8), 0 0 30px 5px rgba(0, 255, 255, 0.8), 0 0 40px 5px rgba(255, 0, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill, .project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    background: #E5D9F2;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #F5EFFF;
+    color: #754E1A;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resume-button {
+    background: #EFB6C8;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.nav-links a,
+.hero button,
+.resume-button {
+    background: #EFB6C8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

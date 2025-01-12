@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tejaswi Kilari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <!-- Profile Image with hover effect -->
+            <img src="./profile.jpg" alt="Profile Picture" class="profile-img"> <!-- Replace with your image path -->
+            <h1>Hi, I'm <span class="name">Tejaswi Kilari</span></h1>
+            <p>Aspiring Software Developer | AWS Certified</p>
+            <button onclick="scrollToSection('contact')">Contact Me</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and dedicated BCA student with a strong foundation in computer science
+            concepts and programming. My academic journey has equipped me with skills in software
+            development. As a quick learner and adaptable individual, I am enthusiastic about starting my
+            career in the IT field.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">Web Development</div>
+            <div class="skill">AWS</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Developed a Crossy Road-inspired game with custom features and interactive gameplay.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Built a chatbot app integrated with Gemini APIs using Streamlit UI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>You can view or download my resume by clicking the button below:</p>
+        <a href="resume.pdf" class="resume-button" target="_blank">View My Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/kilaritejaswi102@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tejaswi Kilari. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
